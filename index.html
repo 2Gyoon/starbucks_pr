@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -342,7 +346,77 @@
         </div>
     </header>
 
-    <section></section>
+    <section id="visual">
+        <div class="wrap">
+            <div class="visual_title fade_in">
+                <img src="./images/visual_title.png" alt="비주얼 타이틀">
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="visual_cup1 fade_in">
+                <img src="./images/visual_cup1.png" alt="비주얼 컵1">
+                <img src="./images/visual_cup1_text.png" alt="비주얼 컵2 텍스트">
+            </div>
+            <div class="visual_cup2 fade_in">
+                <img src="./images/visual_cup2.png" alt="비주얼 컵2">
+                <img src="./images/visual_cup2_text.png" alt="비주얼 컵2 텍스트">
+            </div>
+            <div class="visual_spoon fade_in">
+                <img src="./images/visual_spoon.png" alt="비주얼 스푼">
+            </div>
+        </div>
+    </section>
+
+    <section id="notice">
+        <div class="top">
+            <div class="bgw"></div>
+            <div class="bgb"></div>
+            <div class="wrap">
+                <div class="left">
+                    <p>공지사항</p>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+                            </li>
+                            <li>
+                                <a href="#">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
+                            </li>
+                            <li>
+                                <a href="#">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>
+                            </li>
+                            <li>
+                                <a href="#">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">＋</a>
+                </div>
+                <div class="right">
+                    <p>스타벅스 프로모션</p>
+                    <img class="" src="./images/upload_black_24dp.svg" alt="프로모션">
+                </div>
+            </div>
+        </div>
+        <div class="promotion">
+            <ul>
+                <li>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <a href="#">자세히 보기</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <footer>
         <div class="wrap">

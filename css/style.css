@@ -4,9 +4,10 @@
 body{font-family: 'Nanum Gothic', sans-serif;}
 a{text-decoration: none;}
 
+/* header */
 
-header{width: 100%; background-color: #f6f5f0; position: fixed; top: 0; border-bottom: 1px solid #c8c8c8; z-index: 10;}
-header .wrap{width: 1100px; height: 120px; margin: 0 auto; display: flex; justify-content: space-between;}
+header{width: 100%; height: 120px;  background-color: #f6f5f0; position: fixed; top: 0; z-index: 10; border-bottom: 1px solid #c8c8c8;}
+header .wrap{width: 1100px;margin: 0 auto; display: flex; justify-content: space-between;}
 header .wrap .logo{padding: 22.5px 0;}
 header .wrap .logo a{display: block;}
 header .wrap .logo a img{display: block;}
@@ -42,8 +43,58 @@ header .wrap .menu .main_menu > ul > li .sub_menu .sub_bot .sub_cont{width: 1100
 header .wrap .menu .main_menu > ul > li .sub_menu .sub_bot .sub_cont h4{color: #999; font-weight: bold; padding-bottom: 5px; font-size: 12px;}
 header .wrap .menu .main_menu > ul > li .sub_menu .sub_bot .sub_cont p{color: #669900; padding: 4px 0 16px; font-size: 12px;}
 
+/* visual */
 
-section{height: 150px; background-color: #aaffaa;}
+#visual{margin-top: 120px; background-image: url(../images/visual_bg.jpg); background-position: center;}
+#visual .wrap{width: 1100px; height: 650px; margin: 0 auto; position: relative;}
+#visual .wrap .visual_title{position: absolute; top: 88px; left: -10px;}
+#visual .wrap .visual_title img{}
+#visual .wrap .visual_title a{display: block; width: 130px; color: #592b18; border: 2px solid #592b18; border-radius: 4px; font-size: 16px; font-weight: 700; text-align: center; padding: 10px; cursor: pointer; position: absolute; top: 259px; left: 173px; line-height: 22px;}
+#visual .wrap .visual_title a:hover{background-color: #592b18; color: #fff; transition: background-color 0.4s, color 0.4s;}
+
+#visual .wrap .visual_cup1{}
+#visual .wrap .visual_cup1 img:nth-child(1){position: absolute; bottom: 0; right: -47px;}
+#visual .wrap .visual_cup1 img:nth-child(2){position: absolute; top: 38px; right: 171px;}
+
+#visual .wrap .visual_cup2{}
+#visual .wrap .visual_cup2 img:nth-child(1){position: absolute; bottom: 0; right: 162px;}
+#visual .wrap .visual_cup2 img:nth-child(2){position: absolute; top: 321px; right: 416px;}
+
+#visual .wrap .visual_spoon{}
+#visual .wrap .visual_spoon img{position: absolute; bottom: 0; left: 275px;}
+
+#visual .wrap .fade_in{opacity: 0;}
+
+
+/* 공지사항 + 프로모션 */
+#notice{}
+#notice .top{position: relative;}
+#notice .top .bgw{background-color: #333; width: 50%; height: 100%; position: absolute; top: 0; left: 0;}
+#notice .top .bgb{background-color: #fff; width: 50%; height: 100%; position: absolute; top: 0; right: 0;}
+#notice .top .wrap{position: relative; z-index: 1; width: 1100px; height: 60px; margin: 0 auto; display: flex;}
+
+#notice .top .wrap .left{width: 60%; height: 100%; display: flex; background-color: #333; align-items: center;}
+#notice .top .wrap .left p{color: #fff; font-size: 17px; font-weight: 700; margin-right: 20px;}
+#notice .top .wrap .left .swiper-container{width: 80%; height: 60px; margin: 0;}
+#notice .top .wrap .left .swiper-container ul{}
+#notice .top .wrap .left .swiper-container ul li{}
+#notice .top .wrap .left .swiper-container ul li > a{display: block; color: #fff; line-height: 60px;}
+#notice .top .wrap .left > a{color: #333; display: block; width: 30px; height: 30px; background-color: #fff; line-height: 30px; border-radius: 50%; text-align: center; font-size: 25px; font-weight: 700;}
+
+#notice .top .wrap .right{width: 40%; display: flex; align-items: center; justify-content: flex-end;}
+#notice .top .wrap .right p{font-size: 17px; font-weight: 700; margin-right: 10px;}
+#notice .top .wrap .right img{margin-right: 10px; cursor: pointer;}
+
+
+#notice .promotion{height: 150px; background-color: #aaffaa; transition: height 0.4s;}
+#notice .promotion.active{height: 0;}
+
+#notice .promotion ul{}
+#notice .promotion ul li{}
+#notice .promotion ul li a{}
+
+
+/* footer */
 
 footer{background-color: #272727; border-top: 1px solid #333; padding: 40px 0 60px 0;}
 footer .wrap{width: 1100px; margin: 0 auto;}
@@ -65,5 +116,10 @@ footer .wrap .copy{color: #999; font-size: 12px; text-align: center; padding-top
 
 footer .wrap .f_logo{text-align: center;}
 footer .wrap .f_logo img{padding-top: 30px;}
+
+
+
+
+
 
 
