@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="./js/script.js"></script>
 </head>
-<body>
+<body onscroll="scrollEvt();">
     <header>
         <div class="wrap">
             <div class="logo">
@@ -446,9 +446,26 @@
         </div>
     </section>
 
-    <section id="youtube"></section>
+    <section id="youtube">
+        <div class="wrap">
+            <iframe class="video_part" src="https://www.youtube.com/embed/An6LvWQuj_8?autoplay=1&amp;loop=1&amp;playlist=An6LvWQuj_8&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fpriceless-bhabha-83fc0d.netlify.app&amp;widgetid=1&amp;mute=1" frameborder="0"  allowfullscreen></iframe>
+        </div>
 
-    <section id="season"></section>
+        <div class="video_dot"></div>
+    </section>
+
+    <section id="season">
+        <div class="wrap">
+            <div class="left">
+                <img src="./images/season_product_image.png" alt="시즌상품사진">
+            </div>
+            <div class="right">
+                <img src="./images/season_product_text1.png" alt="시즌상품설명1">
+                <img src="./images/season_product_text2.png" alt="시즌상품설명2">
+                <a href="#">자세히 보기</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="wrap">

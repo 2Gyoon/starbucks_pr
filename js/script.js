@@ -55,6 +55,25 @@ promo_tog.addEventListener("click", function(){
     }
 });
 
+const seasonLeft = document.querySelector("#season .left");
+const seasonRight = document.querySelector("#season .right");
+const seasonOffset = document.querySelector("#season").offsetTop;   //2464
+const b_Height = window.innerHeight;
+console.log(seasonOffset)
 
+function scrollEvt(){
+    const scroll_top = window.scrollY;
+
+    if(scroll_top > seasonOffset - (b_Height / 2 + 500)){
+        seasonLeft.classList.add("active");
+        seasonRight.classList.add("active");
+    }else{
+        seasonLeft.classList.remove("active");
+        seasonRight.classList.remove("active");
+    }
+
+}
+
+// body에 onscroll 설정을 안 해놔서 계속 작동이 안됐음..ㅠ 드디어 해결!
 
 
