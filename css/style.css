@@ -6,7 +6,7 @@ a{text-decoration: none;}
 
 /* header */
 
-header{width: 100%; height: 120px;  background-color: #f6f5f0; position: fixed; top: 0; z-index: 10; border-bottom: 1px solid #c8c8c8;}
+header{width: 100%; height: 120px;  background-color: #f6f5f0; position: fixed; top: 0; z-index: 10; border-bottom: 1px solid #c8c8c8; overflow: hidden;}
 header .wrap{width: 1100px;margin: 0 auto; display: flex; justify-content: space-between;}
 header .wrap .logo{padding: 22.5px 0;}
 header .wrap .logo a{display: block;}
@@ -45,7 +45,7 @@ header .wrap .menu .main_menu > ul > li .sub_menu .sub_bot .sub_cont p{color: #6
 
 /* visual */
 
-#visual{margin-top: 120px; background-image: url(../images/visual_bg.jpg); background-position: center; background-size: cover;}
+#visual{margin-top: 120px; background-image: url(../images/visual_bg.jpg); background-position: center; background-size: cover; overflow: hidden;}
 #visual .wrap{width: 1100px; height: 650px; margin: 0 auto; position: relative;}
 #visual .wrap .visual_title{position: absolute; top: 88px; left: -10px;}
 #visual .wrap .visual_title img{}
@@ -67,7 +67,7 @@ header .wrap .menu .main_menu > ul > li .sub_menu .sub_bot .sub_cont p{color: #6
 
 
 /* 공지사항 + 프로모션 */
-#notice{}
+#notice{ overflow: hidden;}
 #notice .top{position: relative;}
 #notice .top .bgw{background-color: #333; width: 50%; height: 100%; position: absolute; top: 0; left: 0;}
 #notice .top .bgb{background-color: #fff; width: 50%; height: 100%; position: absolute; top: 0; right: 0;}
@@ -111,7 +111,7 @@ header .wrap .menu .main_menu > ul > li .sub_menu .sub_bot .sub_cont p{color: #6
 
 
 /* rewards */
-#rewards{position: relative;}
+#rewards{position: relative; overflow: hidden;}
 #rewards .bgl{position: absolute; left: 0; width: 50%; height: 100%; background-color: #272727;}
 #rewards .bgr{position: absolute; right: 0; width: 50%; height: 100%; background-color: #d5c798;}
 #rewards .wrap{width: 1100px; height: 241px; margin: 0 auto; background-image: url(../images/rewards.jpg); background-size: cover; background-position: 50% 50%; position: relative;}
@@ -133,24 +133,116 @@ header .wrap .menu .main_menu > ul > li .sub_menu .sub_bot .sub_cont p{color: #6
 
 /* season */
 
-#season{background-image: url(../images/season_product_bg.jpg); }
+#season{background-image: url(../images/season_product_bg.jpg); overflow: hidden;}
 #season .wrap{width: 1100px; height: 400px; margin: 0 auto; display: flex; align-items: center;}
 #season .wrap .left{position: relative; width: 50%; height: 100%; left: -10%; opacity: 0; transition: left 0.8s, opacity 0.8s; }
 #season .wrap .left img{display: block; position: absolute; height: 499px;}
 
-#season .wrap .right{position: relative; width: 50%; height: 50%; right: -10%; opacity: 0; transition: right 0.8s, opacity 0.8s; }
+#season .wrap .right{position: relative; width: 50%; height: 50%; right: -10%; opacity: 0; transition: right 0.8s 0.3s, opacity 0.8s 0.3s;}
 #season .wrap .right img{display: block; position: absolute;}
 #season .wrap .right img:nth-child(1){top: 0;}
 #season .wrap .right img:nth-child(2){top: 60px;}
-#season .wrap .right a{position: absolute; top: 130px; left: 5px; padding: 10px; border: 2px solid #333; color: #333; text-align: center; font-weight: 700; line-height: 21px; border-radius: 4px; transition: background-color 0.5s, color 0.5s;}
+#season .wrap .right a{width: 130px; position: absolute; top: 130px; left: 5px; padding: 10px; border: 2px solid #333; color: #333; text-align: center; font-weight: 700; line-height: 21px; border-radius: 4px; transition: background-color 0.5s, color 0.5s;}
 
 #season .wrap .left.active{left: 0; opacity: 1;}
 #season .wrap .right.active{right: 0; opacity: 1;}
 #season .wrap .right a:hover{background-color: #333; color: #fff; }
 
+
+/* reserve */
+
+#reserve{background-image: url(../images/reserve_bg.jpg); background-size: cover; overflow: hidden;}
+#reserve .wrap{width: 1100px; height: 400px; margin: 0 auto; position: relative; }
+#reserve .wrap .left{position: absolute; top: 110px; left: -10%; opacity: 0; transition: left 0.8s, opacity 0.8s; }
+
+#reserve .wrap .text{position: absolute; top: 124px; left: -3%; opacity: 0; transition: left 0.8s 0.5s, opacity 0.8s 0.5s;}
+#reserve .wrap .text img{}
+#reserve .wrap .text a{width: 130px; position: absolute; left: 0; bottom: -40px; padding: 10px; border: 2px solid #d9aa8a; color: #d9aa8a; text-align: center; font-weight: 700; line-height: 21px; border-radius: 4px; transition: background-color 0.5s, color 0.5s;}
+
+#reserve .wrap .text a:hover{background-color: #d9aa8a; color: #fff;}
+
+#reserve .wrap .right{position: absolute; top: 0; right: -10%; opacity: 0; transition: right 0.8s 0.3s, opacity 0.8s 0.3s;}
+
+#reserve .wrap .left.active{left: 0; opacity: 1;}
+#reserve .wrap .right.active{right: 0; opacity: 1;}
+#reserve .wrap .text.active{left: 208px; opacity: 1;}
+
+
+/* pick_fav */
+
+#pick_fav{background-image: url(../images/favorite_bg.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; padding: 110px 0; overflow: hidden;}
+#pick_fav .wrap{width: 1100px; margin: 0 auto; height: 480px; position: relative;}
+#pick_fav .wrap .top{position: absolute; left: 0; top: 0; opacity: 0; transition: left 0.8s, opacity 0.8s;}
+#pick_fav .wrap .mid{position: absolute; left: -10%; top: 245px; opacity: 0; transition: left 0.8s 0.3s, opacity 0.8s 0.3s;}
+#pick_fav .wrap a{width: 130px; position: absolute; opacity: 0; left: 100px; bottom: 0; padding: 10px; border: 2px solid #fff; color: #fff; text-align: center; font-weight: 700; line-height: 21px; border-radius: 4px; transition: background-color 0.5s, color 0.5s, left 0.8s 0.5s, opacity 0.8s 0.5s;}
+#pick_fav .wrap a:hover{background-color: #fff; color: #333;}
+
+#pick_fav .wrap .top.active{left: 190px; opacity: 1;}
+#pick_fav .wrap .mid.active{left: 85px; opacity: 1;}
+#pick_fav .wrap .active{left: 315px; opacity: 1;}
+
+
+/* res_store */
+
+#res_store{background-image: url(../images/reserve_store_bg.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat; overflow: hidden;}
+#res_store .wrap{height: 600px; display: flex; justify-content: center; align-items: center;}
+#res_store .wrap .circle{width: 334px; height: 334px; perspective: 600px;}
+#res_store .wrap .circle .front{position: absolute; transition: 1s; backface-visibility: hidden; transform: rotateY(0deg);}
+#res_store .wrap .circle .front img{display: block;}
+#res_store .wrap .circle .back{position: absolute; transition: 1s; backface-visibility: hidden; transform: rotateY(-180deg);}
+#res_store .wrap .circle .back img{display: block;}
+#res_store .wrap .circle .back a{width: 130px; position: absolute; top: 240px; left: 0; right: 0; margin: auto; padding: 10px; border: 2px solid #333; color: #333; text-align: center; font-weight: 700; line-height: 21px; border-radius: 4px; transition: background-color 0.5s, color 0.5s;}
+
+#res_store .wrap .circle:hover .front{transform: rotateY(180deg);}
+#res_store .wrap .circle:hover .back{transform: rotateY(0deg);}
+#res_store .wrap .circle .back a:hover{background-color: #333; color: #fff;}
+
+/* find_store */
+
+#find_store{background-image: url(../images/find_store_bg.jpg); overflow: hidden;}
+#find_store .wrap{width: 1100px; margin: 0 auto; height: 400px; position: relative;}
+#find_store .wrap .coffee{position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+#find_store .wrap .store{position: absolute; bottom: 0; right: 0;}
+
+#find_store .wrap .left{width: 50%; position: relative;}
+#find_store .wrap .left img{position: absolute; border-radius: 50%; box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.5); opacity: 0;}
+#find_store .wrap .left img:nth-child(1){top: -60px; left: -20%; transition: left 0.8s, opacity 0.8s;}
+#find_store .wrap .left img:nth-child(2){top: 150px; left: 50px; transition: left 0.8s 0.3s, opacity 0.8s 0.3s;}
+
+#find_store .wrap .right{width: 50%; height: 100%; position: absolute; right: 0;}
+#find_store .wrap .right img{position: absolute; left: 20%; opacity: 0;}
+#find_store .wrap .right img:nth-child(1){top: 120px;  transition: left 0.8s, opacity 0.8s;}
+#find_store .wrap .right img:nth-child(2){top: 190px;  transition: left 0.8s 0.3s, opacity 0.8s 0.3s;}
+#find_store .wrap .right a{width: 130px; position: absolute; left: 20%; bottom: 90px; padding: 10px; border: 2px solid #333; color: #333; text-align: center; font-weight: 700; line-height: 21px; border-radius: 4px; opacity: 0; transition: background-color 0.5s, color 0.5s, left 0.8s 0.5s, opacity 0.8s 0.5s;}
+
+#find_store .wrap .right a:hover{background-color: #333; color: #fff;}
+
+#find_store .wrap .left.active img:nth-child(1){left: 0; opacity: 1;}
+#find_store .wrap .left.active img:nth-child(2){left: 250px; opacity: 1;}
+#find_store .wrap .right.active img:nth-child(1){left: 0; opacity: 1;}
+#find_store .wrap .right.active img:nth-child(2){left: 0; opacity: 1;}
+#find_store .wrap .right.active a{left: 0; opacity: 1;}
+
+
+/* awards */
+
+#awards{background-color: #272727;}
+#awards .wrap{padding: 40px 0; width: 1100px; margin: 0 auto; position: relative;}
+#awards .wrap .swiper-container{width: 100%; height: 40px;}
+#awards .wrap .swiper-container .swiper-wrapper{}
+#awards .wrap .swiper-container .swiper-wrapper .swiper-slide{}
+#awards .wrap .swiper-container .swiper-wrapper .swiper-slide img{}
+
+#awards .wrap .swiper-prev, #awards .wrap .swiper-next{width: 42px; height: 42px; outline: none; border: 2px solid #fff; border-radius: 50%; color: #fff; position: absolute; top: 0; bottom: 0; margin: auto; opacity: 0.3; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: 0.4s; background-color: rgba(255,255,255,0.2);}
+#awards .wrap .swiper-prev{left: -100px;}
+#awards .wrap .swiper-next{right: -100px;}
+#awards .wrap .swiper-prev:hover, #awards .wrap .swiper-next:hover{background-color: #fff; border-color: #fff; transition: 0.4s;}
+
+
+
 /* footer */
 
-footer{background-color: #272727; border-top: 1px solid #333; padding: 40px 0 60px 0;}
+footer{background-color: #272727; border-top: 1px solid #333; padding: 40px 0 60px 0; overflow: hidden;}
 footer .wrap{width: 1100px; margin: 0 auto;}
 footer .wrap .fmenu1{display: flex; justify-content: center;}
 footer .wrap .fmenu1 li{position: relative;}
