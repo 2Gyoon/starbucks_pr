@@ -1,5 +1,4 @@
 // visual 파트 fade in
-
 const fadeIn = document.querySelectorAll("#visual .fade_in");
 
 fadeIn.forEach(function(fadeEl, index){
@@ -67,6 +66,8 @@ promo_tog.addEventListener("click", function(){
     }
 });
 
+const badge = document.querySelector("header .badges");
+
 const seasonLeft = document.querySelector("#season .left");
 const seasonRight = document.querySelector("#season .right");
 const seasonOffset = document.querySelector("#season").offsetTop;   //2464
@@ -90,6 +91,18 @@ const findOffset = document.querySelector("#find_store").offsetTop;
 
 function scrollEvt(){
     const scroll_top = window.scrollY;
+
+    if(scroll_top > 500){
+        gsap.to(badge, 0.6, {
+            opacity: 0,
+            display: "none"
+        });
+    }else{
+        gsap.to(badge, 0.6, {
+            opacity: 1,
+            display: "block"
+        });
+    }
 
     if(scroll_top > seasonOffset - (b_Height / 2 + 500)){
         seasonLeft.classList.add("active");
